@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- VOLTA1 -->
+  <group ns="volta1">
+    <include file="$(find automind-assignment)/launch/single_robot.launch">
+      <arg name="init_pose" value="-x -1 -y 1 -z 1" />
+      <arg name="robot_name"  value="volta1" />
+    </include>
+  </group>
+
+  <!-- VOLTA2 -->
+  <group ns="volta2">
+    <include file="$(find automind-assignment)/launch/single_robot.launch">
+      <arg name="init_pose" value="-x -1 -y -1 -z 1" />
+      <arg name="robot_name"  value="volta2" />
+    </include>
+  </group>
+
+  <!-- VOLTA3 -->
+  <group ns="volta3">
+    <include file="$(find automind-assignment)/launch/single_robot.launch">
+      <arg name="init_pose" value="-x 1 -y 1 -z 1" />
+      <arg name="robot_name"  value="volta3" />
+    </include>
+  </group>
+
+  <!-- VOLTA4 -->
+  <group ns="volta4">
+    <include file="$(find automind-assignment)/launch/single_robot.launch">
+      <arg name="init_pose" value="-x 1 -y -1 -z 1" />
+      <arg name="robot_name"  value="volta4" />
+    </include>
+  </group>
+
+</launch>
